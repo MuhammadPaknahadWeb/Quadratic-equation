@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="fa">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>PAKNAHAD</title>
+      <link rel="stylesheet" href="style.css">
+   </head>
+   <body onload="click()">
+      <div class="main">
+         <table>
+            <tbody>
+               <tr>
+                  <th rowspan="2" class="fbuttons">
+                     <table>
+                        <tbody>
+                           <tr>
+                              <th><input placeholder="جواب ۱" id="present" readonly></th>
+                              <th>پارامتر و متغیرها</th>
+                              <th><input placeholder="جواب ۲" id="present2" readonly></th>
+                           </tr>
+                           <tr>
+                              <th><input placeholder="X₁ (ریاضی)" id="Xone" type="number"></th>
+                              <th><input placeholder="Y₁ (ریاضی)" id="Yone" type="number"></th>
+                              <th><input placeholder="K (ریاضی)" id="K" type="number"></th>
+                           </tr>
+                           <tr>
+                              <th><input placeholder="X₂ (ریاضی)" id="Xtwo" type="number"></th>
+                              <th><input placeholder="Y₂ (ریاضی)" id="Ytwo" type="number"></th>
+                              <th><input placeholder="H (ریاضی)" id="H" type="number"></th>
+                           </tr>
+                           <tr>
+                              <th><input placeholder="A (ریاضی)" id="A" type="number"></th>
+                              <th><input placeholder="B (ریاضی)" id="B" type="number"></th>
+                              <th><input placeholder="C (ریاضی)" id="C" type="number"></th>
+                           </tr>
+                           <tr>
+                              <th><input placeholder="X (ریاضی)" id="X" type="number"></th>
+                              <th><input placeholder="Y (ریاضی)" id="Y" type="number"></th>
+                              <th><input placeholder="D (ریاضی)" id="dis" type="number"></th>
+                           </tr>
+                           <tr>
+                              <th><input placeholder="M (ریاضی)" id="Me" type="number"></th>
+                              <th><input placeholder="Km (ریاضی)" id="Km" type="number"></th>
+                              <th><input placeholder="θ (فیزیک)" id="θ" type="number"></th>
+                           </tr>
+                           <tr>
+                              <th><input placeholder="V₁ (فیزیک)" id="Vone" type="number"></th>
+                              <th><input placeholder="V₂ (فیزیک)" id="Vtwo" type="number"></th>
+                              <th><input placeholder="A (فیزیک)" id="acc" type="number"></th>
+                           </tr>
+                           <tr>
+                              <th><input placeholder="ΔT (فیزیک)" id="ΔT" type="number"></th>
+                              <th><input placeholder="ΔD (فیزیک)" id="ΔD" type="number"></th>
+                              <th><input placeholder="F (فیزیک)" id="F" type="number"></th>
+                           </tr>
+                           <tr>
+                              <th><input placeholder="M (فیزیک)" id="M" type="number"></th>
+                              <th><input placeholder="G (فیزیک)" id="G" type="number"></th>
+                              <th><input placeholder="r (فیزیک)" id="r" type="number"></th>
+                           </tr>
+                           <tr>
+                              <th><input placeholder="V (شیمی)" id="V" type="number"></th>
+                              <th><input placeholder="V₂ (شیمی)" id="V2" type="number"></th>
+                              <th><input placeholder="M (شیمی)" id="Mc" type="number"></th>
+                           </tr>
+                           <tr>
+                              <th><input placeholder="T (شیمی)" id="Tf" type="number"></th>
+                              <th><input placeholder="Ti (شیمی)" id="Ti" type="number"></th>
+                              <th><input placeholder="n (شیمی)" id="n" type="number"></th>
+                           </tr>
+                           <tr>
+                              <th><input placeholder="P (شیمی)" id="P" type="number"></th>
+                              <th><input placeholder="P₂ (شیمی)" id="P2" type="number"></th>
+                              <th><input placeholder="R (شیمی)" id="R" type="number"></th>
+                           </tr>
+                           <tr>
+                              <th><input placeholder="D (شیمی)" id="D" type="number"></th>
+                              <th><input placeholder="C (شیمی)" id="Cchem" type="number"></th>
+                              <th><input placeholder="Q (شیمی)" id="Q" type="number"></th>
+                           </tr>
+                           <tr>
+                              <th><input placeholder="A (مساحت/حجم)" id="Area" type="number"></th>
+                              <th><input placeholder="S (مساحت/حجم)" id="side" type="number"></th>
+                              <th><input placeholder="B (مساحت)" id="bigb" type="number"></th>
+                           </tr>
+                           <tr>
+                              <th><input placeholder="b (مساحت)" id="smallb" type="number"></th>
+                              <th><input placeholder="h (مساحت/حجم)" id="height" type="number"></th>
+                              <th><input placeholder="l (مساحت/حجم)" id="length" type="number"></th>
+                           </tr>
+                           <tr>
+                              <th><input placeholder="W (مساحت/حجم)" id="width" type="number"></th>
+                              <th><input placeholder="r (مساحت/حجم)" id="radius" type="number"></th>
+                              <th><input placeholder="V (حجم)" id="Volume" type="number"></th>
+                           </tr>
+                           <tr>
+                              <th colspan="3">فرمول های مربوط به ریاضی</th>
+                           </tr>
+                           <tr>
+                              <th><button class="button16 tooltip" onclick="slope()"  id="slope"><span class="tooltiptext">A= (Y₂ - Y₁) / (X₂ - X₁)</span>شیب خط</button></th>
+                              <th><button class="button17 tooltip" style="background-color: #fff181 !important;" onclick="quadraticEquation()" id="quadz"><span class="tooltiptext"> −b ± √(b² − 4ac) / 2a</span>حل معادله درجه دوم</button></th>
+                              <th><button class="button18 tooltip" onclick="distance()" id="dis"><span class="tooltiptext">√(X₂ - X₁)² + (Y₂ - Y₁)²</span>فاصله بین دو نقطه</button></th>
+                           </tr>
+                           <tr>
+                              <th><button class="button19 tooltip" onclick="pyth()" id="pyth"><span class="tooltiptext">a² + b² = c²</span>قضیه فیثاغورس</button></th>
+                              <th><button class="button20 tooltip" onclick="midPoint()" id="mid"><span class="tooltiptext">(X₂+X₁)/ 2 , (Y₂+Y₁)/ 2</span>نقطه میانی</button></th>
+                              <th><button class="button21 tooltip" onclick="conversion()" id="convert"><span class="tooltiptext">Km = M / 1000</span>تبدیل متر به کیلومتر</button></th>
+                           </tr>
+                           <tr>
+                              <th colspan="3">فرمول های مربوط به فیزیک</th>
+                           </tr>
+                           <tr>
+                              <th><button class="button22 tooltip" onclick="vt()" id="vt"><span class="tooltiptext">V₂ = V₁ + aΔT</span>محاسبه سرعت با داشتن تغییرات زمان</button></th>
+                              <th><button class="button23 tooltip" onclick="Independent()" id="dquad"><span class="tooltiptext">ΔD= V₁ΔT + 0.5a(ΔT)²</span>فرمول مستقل از سرعت ثانویه</button></th>
+                              <th><button class="button24 tooltip" onclick="vd()" id="vd"><span class="tooltiptext">V₂² = V₁² + 2aΔD</span>محاسبه سرعت با داشتن تغییرات مکان</button></th>
+                           </tr>
+                           <tr>
+                              <th><button class="button25 tooltip" onclick="forceGravity()" id="gra"><span class="tooltiptext">F = MG</span>محاسبه نیروی گرانش</button></th>
+                              <th><button class="button26 tooltip" onclick="centrifugalForce()" id="fcircle"><span class="tooltiptext">F = M(V)² / r</span>نیروی جاذبه مرکز</button></th>
+                              <th><button class="button27 tooltip" onclick="rampForce()" id="incline"><span class="tooltiptext">F = MG * cosθ</span>نیرو  بر روی سطح شیب دار</button></th>
+                           </tr>
+                           <tr>
+                              <th colspan="3">فرمول های مربوط به شیمی</th>
+                           </tr>
+                           <tr>
+                              <th><button class="button28 tooltip" onclick="IGL()" id="IGL"><span class="tooltiptext">PV = nRT</span>قانون گاز ایده ال</button></th>
+                              <th><button class="button29 tooltip" onclick="hc()" id="hc"><span class="tooltiptext">Q = MC(T-Ti)</span>ظرفیت گرمایی</button></th>
+                              <th><button class="button30 tooltip" onclick="boyle()" id="boyle"><span class="tooltiptext">PV = P₂V₂</span>قانون بویل</button></th>
+                           </tr>
+                           <tr>
+                              <th colspan="3">فرمول های مربوط به مساحت</th>
+                           </tr>
+                           <tr>
+                              <th><button class="button34 tooltip" onclick="square()" id="square"><span class="tooltiptext">A = S²</span>مربع</button></th>
+                              <th><button class="button35 tooltip" onclick="rectangle()" id="rect"><span class="tooltiptext">A = l * W</span>مستطیل</button></th>
+                              <th><button class="button36 tooltip" onclick="triangle()" id="triangle"><span class="tooltiptext">A = (B*h)/2</span>مثلث</button></th>
+                           </tr>
+                           <tr>
+                              <th><button class="button37 tooltip" onclick="trapezius()" id="trap"><span class="tooltiptext">A = (B + b)h / 2</span>ذوذنقه</button></th>
+                              <th><button class="button38 tooltip" onclick="circle()" id="circle"><span class="tooltiptext">A = (π)r²</span>دایره</button></th>
+                              <th><button class="button39 tooltip" onclick="parallelogram()" id="para"><span class="tooltiptext">A = B * h</span>متوازی الاضلاع</button></th>
+                           </tr>
+                           <tr>
+                              <th colspan="3">فرمول های مربوط به حجم</th>
+                           </tr>
+                           <tr>
+                              <th><button class="button40 tooltip" onclick="cubeSquare()" id="cube"><span class="tooltiptext">V = S³</span>حجم مکعب مربع</button></th>
+                              <th><button class="button41 tooltip" onclick="cubeRectangle()" id="rectpm"><span class="tooltiptext">V = l * W * h</span>حجم مکعب مستطیل</button></th>
+                              <th><button class="button42 tooltip" onclick="sphere()" id="sphere"><span class="tooltiptext">V = (4/3)(π)r³</span>حجم کره</button></th>
+                           </tr>
+                           <tr>
+                              <th><button class="button43 tooltip" onclick="Cylindrical()" id="cyl"><span class="tooltiptext">V = (π)r²h</span>حجم استوانه</button></th>
+                              <th><button class="button44 tooltip" onclick="cones()" id="cone"><span class="tooltiptext">V = (1/3)(π)r²h</span>حجم مخروط</button></th>
+                              <th><button class="button45 tooltip" onclick="pyramid()" id="pyramid"><span class="tooltiptext">V = (1/3)(A of base)h</span>حجم هرم</button></th>
+                           </tr>
+                        </tbody>
+                     </table>
+                  </th>
+               </tr>
+            </tbody>
+         </table>
+      </div>
+      </div>
+      <script src="main.js"></script>
+   </body>
+</html>

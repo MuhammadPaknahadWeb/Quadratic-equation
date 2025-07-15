@@ -1,0 +1,254 @@
+/*
+Author:      Alireza Roshanaie
+Author URI:  https://mihanjs.com/
+*/
+@font-face {
+    font-family: 'mihanjs';
+    src: url("fonts/WebYekan.woff") format("woff");
+}
+@font-face {
+    font-family: 'mihanjs_dinar';
+    src: url("fonts/dinar.woff") format("woff");
+}
+body {
+    direction: ltr;
+    font-family: 'mihanjs', 'Myriad Pro', 'Tahoma';
+    font-size: 16px;
+    background: #00003a;
+    color: #616161;
+}
+table{
+  background-color: #ffffff;
+    margin: 0 auto;
+    border-radius: 5px;
+}
+input{
+    border: 1px solid #cbcbcb;
+    height: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    color: #00003a;
+    border-radius: 4px;
+    font-family: 'mihanjs', 'Myriad Pro', 'Tahoma';
+}
+button {
+    color: #000045;
+    background-color: #eeeeee;
+    border: 0;
+    height: 25px;
+    border-radius: 4px;
+    border: 1px dashed #00004e;
+    font-family: 'mihanjs', 'Myriad Pro', 'Tahoma';
+    cursor: pointer;
+}
+button:focus {
+    outline: 0;
+}
+button:hover {
+    color: #d3d3d3;
+    background-color: teal;
+}
+th {
+    color: #000083;
+}
+.tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 0px;
+    outline: none;
+}
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 150%;
+    left: 50%;
+    margin-left: -60px;
+    font-size: 12px;
+}
+.tooltip .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: black transparent transparent transparent;
+}
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}
+.button1 {
+    padding: 0px 65px;
+}
+.button2 {
+    padding: 0px 69px;
+}
+.button3 {
+    padding: 0px 77px;
+}
+.button4 {
+    padding: 0px 65px;
+}
+.button5 {
+    padding: 0px 69px;
+}
+.button6 {
+    padding: 0px 69px;
+}
+.button7 {
+    padding: 0px 63px;
+}
+.button8 {
+    padding: 0px 60px;
+}
+.button9 {
+    padding: 0px 43px;
+}
+.button10 {
+    padding: 0px 60px;
+}
+.button11 {
+    padding: 0px 62px;
+}
+.button12 {
+    padding: 0px 63px;
+}
+.button13 {
+    padding: 0px 57px;
+}
+.button14 {
+    padding: 0px 59px;
+}
+.button15 {
+    padding: 0px 60px;
+}
+.button16 {
+    padding: 0px 80px;
+}
+.button17 {
+    padding: 0px 37px;
+
+}
+.button18 {
+    padding: 0px 55px;
+}
+.button19 {
+    padding: 0px 60px;
+}
+.button20 {
+    padding: 0px 64px;
+}
+.button21 {
+    padding: 0px 50px;
+}
+.button22 {
+    padding: 0px 5px;
+}
+.button23 {
+    padding: 0px 17px;
+}
+.button24 {
+    padding: 0px 5px;
+}
+.button25 {
+    padding: 0px 46px;
+}
+.button26 {
+    padding: 0px 48px;
+}
+.button27 {
+    padding: 0px 36px;
+}
+.button28 {
+    padding: 0px 60px;
+}
+.button29 {
+    padding: 0px 64px;
+}
+.button30 {
+    padding: 0px 74px;
+}
+.button31 {
+    padding: 0px 75px;
+}
+.button32 {
+    padding: 0px 70px;
+}
+.button33 {
+    padding: 0px 70px;
+}
+.button34 {
+    padding: 0px 90px;
+}
+.button35 {
+    padding: 0px 70px;
+}
+.button36 {
+    padding: 0px 87px;
+}
+.button37 {
+    padding: 0px 83px;
+}
+.button38 {
+    padding: 0px 78px;
+}
+.button39 {
+    padding: 0px 63px;
+}
+.button40 {
+    padding: 0px 62px;
+}
+.button41 {
+    padding: 0px 42px;
+}
+.button42 {
+    padding: 0px 77px;
+}
+.button43 {
+    padding: 0px 72px;
+}
+.button44 {
+    padding: 0px 64px;
+}
+.button45 {
+    padding: 0px 75px;
+}
+.button46 {
+    padding: 0px 48px;
+}
+.button47 {
+    padding: 0px 40px;
+}
+.button48 {
+    padding: 0px 37px;
+}
+.button49 {
+    padding: 0px 38px;
+}
+.button50 {
+    padding: 0px 30px;
+}
+.button51 {
+    padding: 0px 29px;
+}
+th {
+    vertical-align: top;
+}
+.ass {
+    min-width: 325px;
+    height: 150px;
+}
+.space {
+    height: 150px;
+}
+.fbuttons {
+    min-width: 555px;
+}
